@@ -7,20 +7,10 @@ import { useAppContext } from '../context/context'
 import toast from 'react-hot-toast'
 
 const Sidebar = ({ address, likes, likersAddresses, id }) => {
-  const { likeVideo, dislikeVideo, getNumberOfLikes, isLiked } = useAppContext()
+  const {} = useAppContext()
 
   const [liked, setLiked] = useState(false)
   const [numberOfLikes, setNumberOfLikes] = useState(0)
-
-  useEffect(() => {
-    const checkIfLiked = async () => {
-      const liked = await isLiked(id)
-      const likes = await getNumberOfLikes(id)
-      setNumberOfLikes(likes)
-      setLiked(liked)
-    }
-    checkIfLiked()
-  }, [liked, isLiked, getNumberOfLikes])
 
   return (
     <div className={style.sidebar}>
