@@ -1,0 +1,28 @@
+.appVideos {
+  position: relative;
+  height: 800px;
+  border-radius: 20px 20px 0 0;
+  margin-left: 47px;
+  overflow: scroll;
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+}
+
+.appVideos::-webkit-scrollbar {
+  display: none;
+}
+
+.appVideos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.noVideoContainer {
+  display: grid;
+  place-items: center;
+}
+
+.noVidPrompt {
+  color: #fff;
+}
