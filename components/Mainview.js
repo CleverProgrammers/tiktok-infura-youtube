@@ -27,7 +27,7 @@ const MainView = () => {
           tiktoks.map((tiktok, index) => (
             <Video
               key={index}
-              address={tiktok.owners}
+              address={tiktok.owner}
               caption={tiktok.caption}
               videoUrl={tiktok.url}
               likes={tiktok.likes}
